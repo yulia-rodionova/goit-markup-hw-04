@@ -1,0 +1,384 @@
+:root {
+	--main-bg-color: #e5e5e5;
+	--secondary-bg-color: #f4f4fd;
+	--main-nav-color: #2e2f42;
+	--accent-color: #4d5ae5;
+	--main-color: #434455;
+	--hero-text-color: #ffffff;
+	--portfolio-btn-color: #e7e9fc;
+	--portfolio-active-btn-color: #404bbf;
+}
+
+body {
+	font-family: "Roboto", sans-serif;
+	color: var(--main-color);
+	background-color: var(--hero-text-color);
+}
+
+.link {
+	text-decoration: none;
+}
+
+.list {
+	list-style: none;
+}
+
+.hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	white-space: nowrap;
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+}
+
+ul {
+	margin: 0;
+	padding-left: 0;
+}
+
+button {
+	cursor: pointer;
+	border: none;
+}
+
+address {
+	font-style: normal;
+}
+
+img {
+	display: block;
+}
+
+.container {
+	width: 100%;
+	max-width: 1158px;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin: 0 auto;
+}
+
+/*  Header   */
+
+.navigation {
+	display: flex;
+}
+.header > .container {
+	display: flex;
+	align-items: center;
+}
+
+.logo {
+	display: flex;
+
+	font-family: "Raleway", sans-serif;
+	font-weight: 800;
+	font-size: 18px;
+	line-height: 1.33;
+	text-transform: uppercase;
+	color: var(--main-nav-color);
+}
+
+.logo-header {
+	margin-right: 76px;
+	padding: 24px 0;
+}
+
+.logo-accent {
+	color: var(--accent-color);
+}
+
+.nav-list {
+	display: flex;
+	gap: 40px;
+}
+.nav-link {
+	display: inline-block;
+	padding: 24px 0;
+
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.5;
+	letter-spacing: 0.02em;
+	color: var(--main-nav-color);
+}
+
+.nav-link:hover,
+.nav-link:focus {
+	color: var(--accent-color);
+}
+
+.address {
+	margin-left: auto;
+}
+
+.address-list {
+	display: flex;
+	gap: 40px;
+}
+.address-link {
+	display: inline-block;
+	padding: 24px 0;
+
+	font-size: 16px;
+	line-height: 1.5;
+	letter-spacing: 0.02em;
+	color: var(--main-color);
+}
+
+.address-link:focus,
+.address-link:hover {
+	color: var(--portfolio-active-btn-color);
+}
+
+/*     Studio Page     */
+
+/* Section Hero */
+
+.hero {
+	padding-top: 188px;
+	padding-bottom: 188px;
+	text-align: center;
+
+	background-color: var(--main-nav-color);
+}
+
+.hero-title {
+	max-width: 500px;
+	margin: auto;
+
+	font-size: 56px;
+	line-height: 1.07;
+	letter-spacing: 0.02em;
+	color: var(--hero-text-color);
+}
+
+.hero-btn {
+	width: 169px;
+	height: 56px;
+	margin-top: 48px;
+	border-radius: 4px;
+
+	font-family: inherit;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.5;
+	letter-spacing: 0.04em;
+	color: var(--hero-text-color);
+	background-color: var(--accent-color);
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+	background-color: var(--portfolio-active-btn-color);
+}
+
+/*     Section Our Ardvantages      */
+
+.advantages {
+	padding-top: 120px;
+	padding-bottom: 120px;
+}
+.advantages > .container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.advantages-list {
+	display: flex;
+
+	gap: 24px;
+}
+
+.advantages-list > .list-title {
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 1.2;
+	letter-spacing: 0.02em;
+	color: var(--main-nav-color);
+}
+
+.advantages-text {
+	width: 264px;
+	margin-top: 8px;
+}
+.text {
+	font-size: 16px;
+	line-height: 1.5;
+	letter-spacing: 0.02em;
+	color: var(--main-color);
+}
+
+/*     Section Our Products      */
+
+.products {
+	padding-bottom: 120px;
+}
+
+.products > .container {
+	text-align: center;
+}
+
+.section-title {
+	display: block;
+	margin-bottom: 72px;
+
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 1.11;
+	letter-spacing: 0.02em;
+	text-transform: capitalize;
+	color: var(--main-nav-color);
+}
+.products-list {
+	display: flex;
+	gap: 24px;
+}
+
+/*       Section Our Team     */
+
+.team-section {
+	padding-top: 120px;
+	padding-bottom: 120px;
+	background-color: var(--secondary-bg-color);
+}
+.team-section > .container {
+	text-align: center;
+}
+
+.team-list {
+	display: flex;
+	gap: 24px;
+}
+.team-item {
+	background-color: var(--hero-text-color);
+}
+.team-under-photo {
+	padding-top: 32px;
+	padding-bottom: 32px;
+}
+.team-name {
+	text-align: center;
+	margin-bottom: 8px;
+}
+.list-title {
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 1.2;
+	letter-spacing: 0.02em;
+	color: var(--main-nav-color);
+}
+.team-job {
+	font-size: 16px;
+	line-height: 1.5;
+	text-align: center;
+	letter-spacing: 0.02em;
+	color: var(--main-color);
+}
+
+/*       Footer      */
+
+.footer {
+	padding-top: 100px;
+	padding-bottom: 100px;
+	background-color: var(--main-nav-color);
+}
+
+.footer-logo {
+	color: var(--secondary-bg-color);
+}
+
+.footer-text {
+	margin-top: 16px;
+	width: 264px;
+
+	color: var(--portfolio-btn-color);
+}
+
+/*      Portfolio Page     */
+
+.portfolio-header {
+	background-color: var(--hero-text-color);
+	border-bottom: 1px solid var(--portfolio-btn-color);
+}
+
+.portfolio {
+	padding-top: 96px;
+	padding-bottom: 120px;
+}
+.portfolio > .container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.portfolio-btn-list {
+	display: flex;
+	gap: 24px;
+	justify-content: center;
+	margin-bottom: 72px;
+}
+
+.list > .btn {
+	padding: 12px 24px;
+	font-family: inherit;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.5;
+	letter-spacing: 0.04em;
+
+	border-radius: 4px;
+	background-color: var(--secondary-bg-color);
+	color: var(--accent-color);
+}
+
+.btn:hover,
+.btn:focus {
+	background-color: var(--portfolio-active-btn-color);
+	color: var(--secondary-bg-color);
+}
+
+.portfolio-list {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 24px;
+	justify-content: center;
+}
+
+.portfolio-under-photo {
+	border-left: 1px solid var(--portfolio-btn-color);
+	border-bottom: 1px solid var(--portfolio-btn-color);
+	border-right: 1px solid var(--portfolio-btn-color);
+	padding: 32px 16px;
+}
+
+.portfolio-title {
+	margin-bottom: 8px;
+
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 1.2;
+	color: var(--main-nav-color);
+	letter-spacing: 0.02em;
+}
+.portfolio-text {
+	font-size: 16px;
+	line-height: 1.5;
+	letter-spacing: 0.02em;
+	color: var(--main-color);
+}
