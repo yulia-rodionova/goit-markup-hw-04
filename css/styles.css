@@ -212,7 +212,6 @@ img {
 }
 .advantages-list {
 	display: flex;
-
 	gap: 24px;
 }
 
@@ -220,6 +219,7 @@ img {
 	width: 264px;
 	height: 112px;
 	border-radius: 4px;
+	margin-bottom: 8px;
 	background-color: var(--secondary-bg-color);
 }
 
@@ -230,7 +230,6 @@ img {
 }
 
 .advantages-list > .list-title {
-	margin-top: 8px;
 	font-weight: 500;
 	font-size: 20px;
 	line-height: 1.2;
@@ -292,6 +291,7 @@ img {
 	display: flex;
 	gap: 24px;
 }
+
 .team-item {
 	background-color: var(--hero-text-color);
 	box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
@@ -300,6 +300,7 @@ img {
 
 .team-under-photo {
 	padding-top: 32px;
+	padding-bottom: 32px;
 }
 
 .team-name {
@@ -327,9 +328,7 @@ img {
 	display: flex;
 	padding-left: 16px;
 	padding-right: 16px;
-	padding-bottom: 32px;
-	margin-top: 8px;
-	list-style: none;
+	padding-top: 8px;
 	justify-content: space-between;
 	align-items: center;
 	gap: 24px;
@@ -341,9 +340,11 @@ img {
 }
 
 .team-social-link {
-	width: 40px;
-	height: 40px;
-	display: block;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	border-radius: 50%;
 	color: var(--secondary-bg-color);
 	background-color: var(--accent-color);
@@ -356,7 +357,6 @@ img {
 }
 
 .team-social-icon {
-	margin: 12px;
 	fill: currentColor;
 }
 
@@ -372,6 +372,8 @@ img {
 }
 
 .client-list {
+	width: 168px;
+	height: 88px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -379,8 +381,8 @@ img {
 }
 
 .client-link {
-	width: 168px;
-	height: 88px;
+	width: 100%;
+	height: 100%;
 	display: flex;
 	border: 1px solid var(--customers-main-color);
 	color: var(--customers-main-color);
@@ -424,10 +426,6 @@ img {
 	color: var(--portfolio-btn-color);
 }
 
-.footer-social {
-	display: flex;
-}
-
 .footer-social-title {
 	font-weight: 500;
 	font-size: 16px;
@@ -448,11 +446,13 @@ img {
 	width: 40px;
 	height: 40px;
 }
+
 .footer-social-link {
 	width: 100%;
 	height: 100%;
-	display: block;
-	margin-top: 16px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	border-radius: 50%;
 	color: var(--secondary-bg-color);
 	background-color: rgba(255, 255, 255, 0.1);
@@ -521,9 +521,11 @@ img {
 	justify-content: center;
 }
 
-.portfolio-item:hover {
+.portfolio-card:hover {
+	display: block;
 	box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
+
 
 .portfolio-under-photo {
 	border-left: 1px solid var(--portfolio-btn-color);
