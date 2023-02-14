@@ -218,6 +218,9 @@ img {
 .advantages-box {
 	width: 264px;
 	height: 112px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	border-radius: 4px;
 	margin-bottom: 8px;
 	background-color: var(--secondary-bg-color);
@@ -226,7 +229,6 @@ img {
 .advantages-icon {
 	width: 64px;
 	height: 64px;
-	margin: 24px 100px;
 }
 
 .advantages-list > .list-title {
@@ -525,7 +527,6 @@ img {
 	display: block;
 	box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
-
 
 .portfolio-under-photo {
 	border-left: 1px solid var(--portfolio-btn-color);
